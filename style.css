@@ -371,21 +371,22 @@ nav .fa-solid{
         font-size: 25px;
         margin-left: 1px;
     }
-    nav .fa-solid{
+/*     nav .fa-solid{
         display: block;
         font-size: 25px;
-    }
+    } */
      nav ul {
-        background-color: #00cafb;
+/*         background-color: #00cafb;
         position: fixed;
         top:0;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
+        transition: right 0.5s; */
+        visibility: hidden;
         } 
-    nav ul li{
+/*     nav ul li{
         display: block;
         margin: 25px;
     }
@@ -395,7 +396,7 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     
-    }
+    } */
     #about{
         text-align: center;
         padding-left: 0;
@@ -411,8 +412,8 @@ nav .fa-solid{
         
     }
     .about-col-1 img{
-        width: 180px;
-        height: 30vh;
+        width: 170px;
+        height: 25vh;
         align-content: center;
     }
     .about-col-1{
