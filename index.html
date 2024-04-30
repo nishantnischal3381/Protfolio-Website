@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-eqv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d8ffaf01f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="personal/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#achievement">ACHIEVEMENTS</a></li>
+                <li><a href="#protfolio">PROTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web <span>Developer</span></p>
+            <h1>Hi, I'm <span>Nishant</span> From India</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="personal/profile.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">PROFILE</h1>
+                <p>Hello, My name is Nishant, and I'm a Computer Science major. I have experience in several programming languages, including
+                    C, Python, HTML, CSS, average in JAVA and Java Script. I'm particularly intrested in working projects in Web Development and 
+                    currently doing projects in this domain. I did internships from CCL, Ranchi in web developmemnt and from CdersCave in python development. Apart from the technical skils,
+                     I have leadership, communication and  problem solving skills. I used to play cricket and playing in university cricket team of CGU, ODISHA.
+                     Apart from this i have photography skills also. 
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education', event)">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Front-end and Backend</li>
+                        <li><span>Languages</span><br> C, JAVA, HTML, CSS</li>
+                        <li><span>Soft Skills</span><br> Leadership, Problem Solving, Communication</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Internship</span><br>Web Development (At CCL, Ranchi)</li>
+                        <li><span>Internship</span><br>Python Development (At CodersCave)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Matriculation</span><br>G.B.R.C, Bodhgaya, Bihar</li>
+                        <li><span>Intermeddiate</span><br>G.N.H.S.S, Ranchi</li>
+                        <li><span>B.Tech (CSE)</span><br>CGU, Odisha</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="achievement">
+    <div class="container">
+        <h1 class="sub-title">ACHIEVEMENTS</h1>
+        <div class="tab-titles2">
+            <p1 class="tab-links active-link" onclick="opentab('technicals', event)">TECHNICALS</p1>
+            <p2 class="tab-links" onclick="opentab('sports', event)">SPORTS</p2>
+            <p3 class="tab-links" onclick="opentab('co-curricular', event)">CO-CURRICULAR</p3>
+        </div>
+        <div class="tab-contents active-tab" id="technicals">
+            <ul>
+                <div class="tcimage">
+                <img src="personal/tec2.png">
+                <img src="personal/TT3.png">
+                <img src="personal/TT4.png">
+                <img src="personal/TC.png">
+                </div>
+            </ul>
+        </div>
+        <div class="tab-contents" id="sports">
+            <ul>
+                <div class="tcimage">
+                    <img src="personal/S2.png">
+                    <img src="personal/S3.png">
+                    <img src="personal/Sports.png">
+                    <img src="personal/cc5.png">
+                    </div>
+            </ul>
+        </div>
+        <div class="tab-contents" id="co-curricular">
+            <ul>
+                <div class="tcimage">
+                    <img src="personal/cc2.png">
+                    <img src="personal/cc3.png">
+                    <img src="personal/cc4.png">
+                    <img src="personal/cc6.png">
+                    <img src="personal/Cc1.png">
+                    </div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="protfolio">
+    <div class="container">
+        <h1 class="sub-title">PROJECTS</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="personal/work-1.png">
+                <div class="layer">
+                    <h3>College Website</h3>
+                    <p>Working college website using front-end.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal/work-2.png">
+                <div class="layer">
+                    <h3>Online Banking</h3>
+                    <p>Working  Online banking website using front-end and back-end.</p>
+                    <a href="https://github.com/nishant3381/Online-Banking-System/tree/master"><i class="fa-solid fa-link"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="personal/work-3.png">
+                <div class="layer">
+                    <h3>TO-DO List</h3>
+                    <p>Working TO-DO List website using front-end and back-end.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal/work-1.png">
+                <div class="layer">
+                    <h3>PROTFOLIO</h3>
+                    <p>Protfolio website codes</p>
+                    <a href="https://github.com/nishant3381/Protfolio-website"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/nishant3381/CVIP-PYTHONDEVELOPMENT" class="btn">See more</a>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">CONTACT INFO</h1>
+                <p><i class="fa-solid fa-envelope"></i>nishantkumarsingh2917@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9693278015</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/nishant.nischal.737?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/x.nish.ant.x?igsh=MW8xcDExYnFrc3B5Ng=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nishant-kumar-419194275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="personal/Nishant_Resume PERSONAL.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Mesaage"></textarea>
+                    <button type="submit" class="btn btn2" > SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © Nishant.</p></div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, event) {
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    document.getElementById(tabname).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyhhIPbOmBfnArK4KuXvWnHJT5KqNV8ogMbXWJ3AgSRCzzveeEwzJPC9fkN0Qp2QUbJag/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+   
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+               msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
