@@ -499,7 +499,7 @@ nav .fa-solid{
     }
     .tab-titles2 {
         margin-left: 0;
-        font-weight: 0;
+        padding-right: 4px;
         margin-bottom: 20px;
     }
     .tab-titles2 p1{
