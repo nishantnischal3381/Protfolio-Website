@@ -412,8 +412,8 @@ nav .fa-solid{
         
     }
     .about-col-1 img{
-        width: 170px;
-        height: 25vh;
+        width: 150px;
+        height: 150px;
         align-content: center;
     }
     .about-col-1{
@@ -461,6 +461,8 @@ nav .fa-solid{
         font-weight: 100;
         color: #ababab;  
     }
+    .work img{
+        margin-left: 15px;
     .contact-left,.contact-right{
         flex-basis: 100%;
     }
