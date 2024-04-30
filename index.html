@@ -9,19 +9,23 @@
     <script src="https://kit.fontawesome.com/d8ffaf01f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="bganimation" id="bganimation">
+        <div class="backgroundanim">
+
+        </div>
+    </div>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="logo1.png" class="logo">
+            <img src="personal/logo1.png" class="logo">
             <ul id="sidemenu">
-                <li><a href="#header">HOME</a></li>
                 <li><a href="#about">ABOUT ME</a></li>
                 <li><a href="#achievement">ACHIEVEMENTS</a></li>
-                <li><a href="#protfolio">PROTFOLIO</a></li>
+                <li><a href="#protfolio">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-<!--                 <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> -->
-            </ul>
-<!--             <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+                <!-- <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> -->
+            </ul> 
+            <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
         </nav>
         <div class="header-text">
             <p>Web <span>Developer</span></p>
@@ -34,7 +38,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="profile.png">
+                <img src="personal/profile.png">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">PROFILE</h1>
@@ -85,31 +89,31 @@
         <div class="tab-contents active-tab" id="technicals">
             <ul>
                 <div class="tcimage">
-                <img src="tec2.png">
-                <img src="TT3.png">
-                <img src="TT4.png">
-                <img src="TC.png">
+                <img src="personal/tec2.png">
+                <img src="personal/TT3.png">
+                <img src="personal/TT4.png">
+                <img src="personal/TC.png">
                 </div>
             </ul>
         </div>
         <div class="tab-contents" id="sports">
             <ul>
                 <div class="tcimage">
-                    <img src="S2.png">
-                    <img src="S3.png">
-                    <img src="Sports.png">
-                    <img src="cc5.png">
+                    <img src="personal/S2.png">
+                    <img src="personal/S3.png">
+                    <img src="personal/Sports.png">
+                    <img src="personal/cc5.png">
                     </div>
             </ul>
         </div>
         <div class="tab-contents" id="co-curricular">
             <ul>
                 <div class="tcimage">
-                    <img src="cc2.png">
-                    <img src="cc3.png">
-                    <img src="cc4.png">
-                    <img src="cc6.png">
-                    <img src="Cc1.png">
+                    <img src="personal/cc2.png">
+                    <img src="personal/cc3.png">
+                    <img src="personal/cc4.png">
+                    <img src="personal/cc6.png">
+                    <img src="personal/Cc1.png">
                     </div>
             </ul>
         </div>
@@ -122,7 +126,7 @@
         <h1 class="sub-title">PROJECTS</h1>
         <div class="work-list">
             <div class="work">
-                <img src="work-1.png">
+                <img src="personal/work-1.png">
                 <div class="layer">
                     <h3>College Website</h3>
                     <p>Working college website using front-end.</p>
@@ -130,7 +134,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="work-2.png">
+                <img src="personal/work-2.png">
                 <div class="layer">
                     <h3>Online Banking</h3>
                     <p>Working  Online banking website using front-end and back-end.</p>
@@ -139,7 +143,7 @@
                 
             </div>
             <div class="work">
-                <img src="work-3.png">
+                <img src="personal/work-3.png">
                 <div class="layer">
                     <h3>TO-DO List</h3>
                     <p>Working TO-DO List website using front-end and back-end.</p>
@@ -147,7 +151,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="work-1.png">
+                <img src="personal/work-1.png">
                 <div class="layer">
                     <h3>PROTFOLIO</h3>
                     <p>Protfolio website codes</p>
@@ -172,7 +176,7 @@
                     <a href="https://www.instagram.com/x.nish.ant.x?igsh=MW8xcDExYnFrc3B5Ng=="><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/nishant-kumar-419194275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></i></a>
                 </div>
-                <a href="Nishant_Resume PERSONAL.pdf" download class="btn btn2">Download Resume</a>
+                <a href="personal/Nishant_Resume PERSONAL.pdf" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -188,8 +192,16 @@
 </div>
 <div class="copyright">
     <p>Copyright © Nishant.</p></div>
-
-<!-- <script>
+<script>
+    const bganimmation = document.getElementById('bganimation');
+    const numberOfColorBoxes = 1000;
+    for(let i = 0; i< numberOfColorBoxes; i++){
+        const colorBox = document.createElement('div');
+        colorBox.classList.add('colorBox');
+        bganimmation.append(colorBox)
+    }
+</script>
+<script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -204,15 +216,6 @@
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
-</script> -->
-<!-- <script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200";
-    } -->
 </script>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyhhIPbOmBfnArK4KuXvWnHJT5KqNV8ogMbXWJ3AgSRCzzveeEwzJPC9fkN0Qp2QUbJag/exec'
