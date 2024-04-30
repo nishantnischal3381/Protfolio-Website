@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(bg1.png);
+    background-image: url(personal/bg1.png);
     background-size: cover;
     background-position: center;
 }
@@ -29,12 +29,15 @@ nav{
 }
 .logo{
     width: 110px;
+    margin-left: 30px;
+    margin-top: 20px;
 
 }
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 20px 20px;
+    margin-right: 30px;
 
 }
 nav ul li a{
@@ -80,6 +83,57 @@ nav ul li a:hover::after{
 .header-text p span{
     color:  #00cafb;
 }
+
+.bganimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    /* background: #080808; */
+    filter: saturate(2);
+    overflow: hidden;
+}
+.colorBox{
+    z-index: 2;
+    filter: brightness(0.5);
+    transition: 0.5s ease;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 6px;
+  
+
+    color: #00cafb;
+    /* background: #1d1d1d; */
+}
+.colorBox:hover{
+    background: #00cafb;
+    transition-duration: 0s;
+}
+.backgroundanim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #00cafb;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+/* @keyframes animBack{
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+} */
+
 #about{
     padding: 80px;
     color: #ababab;
@@ -356,7 +410,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(bgss.png);
+        background-image: url(personal/bgss.png);
     }
     .header-text{
         margin-top: 70%;
@@ -371,32 +425,28 @@ nav .fa-solid{
         font-size: 25px;
         margin-left: 1px;
     }
-/*     nav .fa-solid{
+    /* nav .fa-solid{
         display: block;
         font-size: 25px;
+        font-weight: 0;
     } */
-     nav ul {
-/*         background-color: #00cafb;
-        position: fixed;
-        top:0;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s; */
+      nav ul {
         visibility: hidden;
+
         } 
-/*     nav ul li{
-        display: block;
-        margin: 25px;
-    }
-    nav ul .fa-solid{
+    /* nav ul li{
+        /* display: block; */
+        /* margin: 25px; */
+        /* font-size: 2px; */
+
+    /* }  */
+    /* nav ul .fa-solid{
         position: absolute;
         top:25px;
         left: 25px;
-        cursor: pointer;
+        cursor: pointer; */
     
-    } */
+    /* } */
     #about{
         text-align: center;
         padding-left: 0;
@@ -463,6 +513,7 @@ nav .fa-solid{
     }
     .work img{
         margin-left: 15px;
+    }
     .contact-left,.contact-right{
         flex-basis: 100%;
     }
