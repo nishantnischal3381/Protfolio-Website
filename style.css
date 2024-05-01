@@ -490,7 +490,7 @@ nav .fa-solid{
     }
     .tab-titles p{
         font-size: 20px;
-        margin-left: 35px;
+        margin-left: 28px;
     }
     #achievement{
         text-align: center;
@@ -553,6 +553,45 @@ nav .fa-solid{
         text-align: center;
         font-size: 8px;
     }
+    .bganimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    /* background: #080808; */
+    filter: saturate(2);
+    overflow: hidden;
+}
+.colorBox{
+    z-index: 2;
+    filter: brightness(0.5);
+    transition: 0.5s ease;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 6px;
+  
 
+    color: #00cafb;
+    /* background: #1d1d1d; */
+}
+.colorBox:hover{
+    background: #00cafb;
+    transition-duration: 0s;
+}
+.backgroundanim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #00cafb;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
 
 }
