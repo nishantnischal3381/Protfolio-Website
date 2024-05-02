@@ -485,12 +485,12 @@ nav .fa-solid{
     }
     .tab-links{
         font-size: 20px;
-        margin-right: 2px; 
+        
         
     }
     .tab-titles p{
         font-size: 20px;
-        margin-left: 35px;
+        margin-left: 40px;
     }
     #achievement{
         text-align: center;
@@ -500,24 +500,24 @@ nav .fa-solid{
     .tab-titles2 {
         margin-left: 0;
         padding-right: 8px;
-        margin-bottom: 30px;
+        padding-bottom: 30px;
     }
     .tab-titles2 p1{
         font-size: 20px;
-        margin-left: 15px;
+        margin-left: 18px;
         font-weight: 100;
         color: #ababab;
         
     }
     .tab-titles2 p2{
         font-size: 20px;
-        margin-left: 15px;
+        margin-left: 18px;
         font-weight: 100;
         color: #ababab;  
     }
     .tab-titles2 p3{
         font-size: 20px;
-        margin-left: 15px;
+        margin-left: 18px;
         font-weight: 100;
         color: #ababab;  
     }
