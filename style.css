@@ -520,6 +520,8 @@ nav .fa-solid{
     }
     .work {
         align-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .contact-left,.contact-right{
         flex-basis: 100%;
