@@ -590,6 +590,31 @@ nav .fa-solid{
     filter: blur(60px);
     animation: animBack 6s linear infinite;
 }
+    .work img{
+    width: 200px;
+    height: 230px;
+    border-radius: 10%;
+    display: block;
+    position: relative;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 200px;
+    height: 0; 
+    background: linear-gradient(rgba(0,0,0,0.6), #00cafb);
+    border-radius: 10%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
 
 
 }
