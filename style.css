@@ -486,7 +486,7 @@ nav .fa-solid{
         
     }
     .tab-titles p{
-        font-size: 25px;
+        font-size: 23px;
         margin-left: 30px;
     }
     #achievement{
@@ -519,7 +519,7 @@ nav .fa-solid{
         color: #ababab;  
     }
     .work {
-        margin-left: 25px;
+        align-content: center;
     }
     .contact-left,.contact-right{
         flex-basis: 100%;
