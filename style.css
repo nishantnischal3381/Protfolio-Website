@@ -21,6 +21,7 @@ body{
 .container{
     padding: 10px 10px;
 }
+
 nav{
     display: flex ;
     align-items: center;
@@ -93,7 +94,7 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: repeat(20,1fr);
     grid-template-rows: repeat(20,1fr);
-    /* background: #080808; */
+    
     filter: saturate(2);
     overflow: hidden;
 }
@@ -108,7 +109,7 @@ nav ul li a:hover::after{
   
 
     color: #00cafb;
-    /* background: #1d1d1d; */
+    
 }
 .colorBox:hover{
     background: #00cafb;
@@ -123,16 +124,9 @@ nav ul li a:hover::after{
     background: #00cafb;
     filter: blur(60px);
     animation: animBack 6s linear infinite;
-}
+} 
 
-/* @keyframes animBack{
-    0%{
-        top: -60px;
-    }
-    100%{
-        top: 120%;
-    }
-} */
+
 
 #about{
     padding: 80px;
@@ -155,11 +149,12 @@ nav ul li a:hover::after{
     flex-basis: 60%;
     
 }
-.sub-title{
+.about-col-2 .sub-title{
     font-size: 40px;
     font-weight: 600;
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-left: 0;
     
 }
 .tab-titles{
@@ -218,20 +213,20 @@ nav ul li a:hover::after{
 }
 .tab-titles2 p1{
     font-size: 25px;
-    margin-left: 50px;
+    margin-left: 80px;
     font-weight: 600;
     color: #ababab;
     
 }
 .tab-titles2 p2{
     font-size: 25px;
-    margin-left: 50px;
+    margin-left: 80px;
     font-weight: 600;
     color: #ababab;   
 }
 .tab-titles2 p3{
     font-size: 25px;
-    margin-left: 50px;
+    margin-left: 80px;
     font-weight: 600;
     color: #ababab;
     
@@ -412,12 +407,6 @@ nav .fa-solid{
     #header{
         background-image: url(bgss.png);
     }
-    .logo{
-    width: 90px;
-    margin-left: 0;
-    margin-top: 0;
-
-    }
     .header-text{
         margin-top: 70%;
         font-size: 15px;
@@ -486,8 +475,8 @@ nav .fa-solid{
         
     }
     .tab-titles p{
-        font-size: 23px;
-        margin-left: 30px;
+        font-size: 20px;
+        margin-left: 40px;
     }
     #achievement{
         text-align: center;
@@ -495,33 +484,31 @@ nav .fa-solid{
         padding-right: 0;
     }
     .tab-titles2 {
-        margin-left: 35px;
+        margin-left: 10px;
         font-weight: 0;
-        margin-bottom: 25px;
+        padding-left: 20px;
     }
     .tab-titles2 p1{
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 20px;
         font-weight: 100;
         color: #ababab;
         
     }
     .tab-titles2 p2{
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 20px;
         font-weight: 100;
         color: #ababab;  
     }
     .tab-titles2 p3{
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 20px;
         font-weight: 100;
         color: #ababab;  
     }
     .work {
-        align-content: center;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 30px;
     }
     .contact-left,.contact-right{
         flex-basis: 100%;
@@ -591,31 +578,6 @@ nav .fa-solid{
     background: #00cafb;
     filter: blur(60px);
     animation: animBack 6s linear infinite;
-}
-    .work img{
-    width: 200px;
-    height: 230px;
-    border-radius: 10%;
-    display: block;
-    position: relative;
-    transition: transform 0.5s;
-}
-.layer{
-    width: 200px;
-    height: 0; 
-    background: linear-gradient(rgba(0,0,0,0.6), #00cafb);
-    border-radius: 10%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    transition: height 0.5s;
 }
 
 
