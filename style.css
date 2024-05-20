@@ -403,17 +403,21 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 600px){
     #header{
         background-image: url(bgss.png);
-        width: 110%;
-        height: 100vh;
     }
     .header-text{
         margin-top: 70%;
         font-size: 15px;
         margin-left: 1px;
     }
+    .logo{
+    width: 100px;
+    margin-left: 0;
+    margin-top: 0;
+
+}
     .header-text h1{
         font-size: 30px;
         margin-left: 1px;
@@ -444,9 +448,9 @@ nav .fa-solid{
         cursor: pointer; */
     
     /* } */
-     #about{
+    #about{
         text-align: center;
-        padding-left: 30px;
+        padding-left: 0;
         padding-right: 0;
     }
     .sub-title{
@@ -477,78 +481,43 @@ nav .fa-solid{
         
     }
     .tab-titles {
-        /* margin-left: 10px; */
+        margin-left: 20px;
     }
     .tab-titles p{
         font-size: 20px;
-        margin-left: 20px;
+        margin-left: 40px;
     }
     #achievement{
         text-align: center;
         padding-left: 0;
         padding-right: 0;
     }
-    .container .sub-title{
-        text-align: center;
-        margin-left: 30px;
-    }
     .tab-titles2 {
-        margin-left: 15px;
+        margin-left: 10px;
         font-weight: 0;
         padding-left: 20px;
     }
     .tab-titles2 p1{
-        font-size: 16px;
-        margin-left: 10px;
+        font-size: 18px;
+        margin-left: 20px;
         font-weight: 100;
         color: #ababab;
         
     }
     .tab-titles2 p2{
-        font-size: 16px;
-        margin-left: 20px;
+        font-size: 18px;
+        margin-left: 45px;
         font-weight: 100;
         color: #ababab;  
     }
     .tab-titles2 p3{
-        font-size: 16px;
-        margin-left: 20px;
+        font-size: 18px;
+        margin-left: 45px;
         font-weight: 100;
         color: #ababab;  
     }
-    .tcimage{
-        padding-left: 20px;
-    }
     .work {
-        margin-left: 35px;
-    }
-    .work img{
-        width: 200px;
-        height: 250px;
-        border-radius: 10%;
-        display: block;
-        position: relative;
-        transition: transform 0.5s;
-    }
-    .layer{
-        width: 200px;
-        height: 0; 
-        background: linear-gradient(rgba(0,0,0,0.6), #00cafb);
-        border-radius: 10%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 40px;
-        text-align: center;
-        transition: height 0.5s;
-    }
-    .btn{
-        align-items: center;
+        margin-left: 30px;
     }
     .contact-left,.contact-right{
         flex-basis: 100%;
@@ -583,7 +552,7 @@ nav .fa-solid{
     position: absolute;
     top: 0;
     left: 0;
-    width: 110%;
+    width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(20,1fr);
