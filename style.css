@@ -256,6 +256,7 @@ nav ul li a:hover::after {
     width: 250px;
     height: 200px;
     margin: 10px;
+    box-shadow: 0px 0px 20px #00cafb;
 }
 
 #protfolio {
@@ -399,7 +400,7 @@ form input, form textarea{
     color:#fff;
     font-size: 18px;
     border-radius: 6px;
-    
+    box-shadow: 0px 0px 20px #00cafb;
 }
 form .btn2{
     padding: 14px 60px;
@@ -511,6 +512,8 @@ nav .fa-solid {
     .tab-titles p{
         margin-left: 15px;
         text-align: center;
+        font-size: 18px;
+        font-weight: 600;
     }
 
     .tab-links {
@@ -531,10 +534,13 @@ nav .fa-solid {
         text-align: center;
         padding: 0  70px;
     }
+    .achievement{
+        box-shadow: 0px 0px 20px #00cafb;
+    }
     
-.tcimage {
-    padding: 0 -10px;
-}
+   .tcimage {
+        padding: 0 -10px;
+   }
     .work{
        
         margin-left: 50px;
@@ -564,6 +570,7 @@ nav .fa-solid {
         width: 100%;
         border: 0;
         outline: none;
+         box-shadow: 0px 0px 20px #00cafb;
     }
     .contact-left p {
         font-size: 14px;
